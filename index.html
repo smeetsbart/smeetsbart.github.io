@@ -65,7 +65,8 @@
   <h1>Bart Smeets</h1>
   <div id="about" class="section">
   <h2>About me</h2>
-    <p>I work at the interface of active matter physics and mechanobiology.
+    <p>At the head of the <a href="https://www.biw.kuleuven.be/biosyst/mebios/multicellular-system-dynamics-lab">Muticellular System Dynamics Lab</a>, 
+       I work at the interface of active matter physics and mechanobiology.
        I love building computational models of multicellular systems.
        For this, we mainly develop agent-based models focusing on mechanics that represent interaction between cells and subcellular elements.
        In our group, we have been spearheading the development of detailed foam-like descriptions of tissues.
@@ -78,9 +79,10 @@
     <ul>
       <li>
         
-      BioRxiv preprint: <a href="https://www.biorxiv.org/content/10.1101/2024.08.30.610303v1">Active foam dynamics of tissue spheroid fusion</a>
+      <a href="https://www.biorxiv.org/content/10.1101/2024.08.30.610303v1">Ongenae et al. (2024) BioRxiv preprint</a> Active foam dynamics of tissue spheroid fusion
 
-      <p>Liquid-like behaviors of multicellular systems have long been observed. For examples, tissues will wet or dewet from a surface or phase separate like water and oil during cell sorting.
+      <p>It has long been known that multicellular systems may exhibit liquid-like behaviors.
+      For examples, tissues will wet or dewet from a surface or phase separate like water and oil during cell sorting.
       When brought together two spheroids (spherical droplets of cell material) will spontaneously fuse, a behavior again very similar to the coalescence of liquid droplets with surface tension.
       When probed by mechanical tests, tissues appear solid-like, and these liquid-like behaviors stem from active cell forces driving cell rearrangements and cytoskeletal remodelling, 
       processes which dominate the long-timescale viscous response of a tissue.</p>
@@ -100,12 +102,24 @@
       </p>
       </li>
       <li>
-        BioRxiv preprint: <a href="https://www.biorxiv.org/content/10.1101/2025.04.17.649329v1">Rigidity transitions in a 3D active foam model of cell monolayers with frictional contact interactions</a>
-
+         <a href="https://www.biorxiv.org/content/10.1101/2025.04.17.649329v1">Vangheel et al. (2025) BioRxiv preprint</a> Rigidity transitions in a 3D active foam model of cell monolayers with frictional contact interactions
+        
          <p>The classic vertex model predicts a density-independent rigidity transition to occur when preferred cell shape exceeds a critical shape index. 
             In other words, factors that drive cell elongation, such as adhesion / reduced interfacial tension will help unjam the tissue.
             This prediction is in marked contrast with the behavior of colloid-like (active) particles. 
-            For these particles, adhesion will always inhibit particle rearrangments and thus drive the system towards a glass or jamming transition.
+            For these particles, adhesion will inhibit particle rearrangments and thus drive the system towards a glass or jamming transition.
+          </p>
+
+          <p>
+            We developed a 3D foam-like model of cell monolayers in which cells are represented as discrete entities with explicit contact interactions. 
+            This model naturally represents foam-like behavior (where the microstructure is determined by the balance of tension at various interfaces): 
+            At high cell-cell adhesion (or reduced interfacial tension at the cell-cell interface), cells become columnar and can even extrude from the monolayer.
+            At high cell-substrate adhesion, cells become spread out and squamous.
+            The foam was turned into an 'active foam' by including a minimal model of cell motility, which includes both a polar component (net migration) and a dipolar component (cell elongation).
+            Our model captures the essential features of both vertex models (fluidity driven by cell deformation) and colloid-like models (fluidity driven by debonding).
+            Thus, we use the model to draw a unified phase diagram of rigidity transitions in foam-like materials.
+            Moreover, we were able to explore the effect of cell-cell friction. We show that it drastically reduces cell rearrangements (thus appearing to solidify the tissue).
+            However, this was not found to be a (typical) rigidity transition, since the static yield stress in a shear experiment remains zero, even when increasing cell-cell friction.
           </p>
         
       </li>
