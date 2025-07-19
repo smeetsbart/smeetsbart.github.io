@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Bart Smeets - Personal website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bart Smeets – Academic Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: sans-serif; max-width: 700px; margin: auto; padding: 2em; }
-    h1 { color: #2c3e50; }
-    nav a { margin-right: 15px; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.6;
+      background: #fefefe;
+      color: #222;
+    }
+
+    h1, h2 {
+      color: #2a3f5f;
+    }
+
+    h1 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    iframe {
+      max-width: 100%;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .footer {
+      margin-top: 4rem;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ccc;
+      padding-top: 1rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Bart Smeets/h1>
-  <p>I am a researcher at the interface of active matter physics and mechanobiology. 
-  I love developing and discussing computational models.</p>
 
-  <nav>
-    <a href="#papers">Publications</a>
-    <a href="#blog">Scribbles</a>
-    <a href="#videos">Videos</a>
-  </nav>
+  <h1>Bart Smeets</h1>
 
-  <h2 id="papers">Some interesting papers and preprints</h2>
-  <ul>
-    <li><a href="https://doi.org/10.1234/example1">An example paper</a></li>
-    <li><a href="https://doi.org/10.1234/example2">Another example</a></li>
-  </ul>
+  <div class="section">
+    <p>I am a researcher working on computational models in biophysics, particularly tissue mechanics, active matter, and emergent behavior in cellular systems. I enjoy building simple physical models that lead to testable predictions in biological systems.</p>
+  </div>
 
-  <h2 id="blog">Scribbles</h2>
-  <p>Here i pen down some thoughts - sometimes structured, sometimes random - on various science topics and interests.</p>
+  <div class="section">
+    <h2>Selected Publications</h2>
+    <ul>
+      <li><a href="https://doi.org/10.xxxx/yyyy">Smeets et al., 2024 – Fluidization in Active Tissues</a></li>
+      <li><a href="https://doi.org/10.xxxx/yyyy">Smeets et al., 2023 – Adhesion-Driven Jamming Transitions</a></li>
+    </ul>
+  </div>
 
-  <h2 id="videos">Videos</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  <div class="section">
+    <h2>Talks & Videos</h2>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+              frameborder="0" allowfullscreen 
+              style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      </iframe>
+    </div>
+  </div>
 
-  <p>Contact: bart.smeets@kuleuven.be</p>
+  <div class="section">
+    <h2>Contact</h2>
+    <p>Email: your.name@yourinstitution.edu</p>
+    <p><a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a> |
+       <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a> |
+       <a href="https://github.com/smeetsbart">GitHub</a></p>
+  </div>
+
+  <div class="footer">
+    © 2025 Bart Smeets. Built with GitHub Pages.
+  </div>
+
 </body>
 </html>
