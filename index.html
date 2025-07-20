@@ -107,6 +107,47 @@ nav {
       padding: 20px;
       flex-grow: 1;
     }
+
+.publication-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.publication-card h3 {
+  margin-top: 0;
+  color: #2a3f5f;
+  font-size: 1.2rem;
+}
+
+.publication-card a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.publication-card a:hover {
+  text-decoration: underline;
+}
+
+.publication-image {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.publication-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.publication-description p {
+  margin-bottom: 1em;
+}
+    
 /* Mobile-friendly layout */
 @media (max-width: 768px) {
   nav {
@@ -176,8 +217,38 @@ nav {
     Below, I discuss some important and/or recent work from our group.
     
     <h2>Highlighted publications and preprints</h2>
+
+    <div class="publication-card">
+      <h3>
+        <a href="https://www.biorxiv.org/content/10.1101/2024.08.30.610303v1">
+          Ongenae et al. (2024) – <b>Active foam dynamics of tissue spheroid fusion</b>
+        </a>
+      </h3>
+    
+      <div class="publication-image">
+        <img src="https://gitlab.kuleuven.be/mebios-particulate/publications/mpacts-active-foam-dynamics-of-tissue-spheroid-fusion/-/raw/main/images/fusion_example.jpg"
+             alt="Fusion example" />
+      </div>
+    
+      <div class="publication-description">
+        <p>It has long been known that multicellular systems may exhibit liquid-like behavior. 
+           For example, tissues will wet or dewet from a surface or phase separate during cell sorting. 
+           When brought together, two spheroids (spherical droplets of cell material) will spontaneously fuse, much like liquid droplets with surface tension.
+           Yet, when probed by mechanical tests, tissues appear solid-like. 
+           These liquid-like behaviors stem from active cell forces driving rearrangements and cytoskeletal remodelling, dominating the long-timescale viscous response of tissue.</p>
+    
+        <p>In this work, we studied the fusion of tissue spheroids to investigate how active properties at the cell scale influence macroscopic fusion dynamics. 
+           We performed a detailed experimental analysis of both the fusion process and tissue microstructure at the cellular scale. 
+           We found that cells in fusing tissues are highly active, with frequent rearrangements.
+           We then compared these experiments to simulations of an active foam model, where cells are modeled as volume-preserving 'bubbles' with surface and adhesive tension. 
+           Migration was modeled via a protrusive/retractive pressure aligned with a randomly diffusing polarity. 
+           These simulated spheroids spontaneously fused — just like in experiments.
+           We mapped how cell-scale properties govern the outcome of fusion, and propose a dimensionless activity parameter that predicts whether the tissue behaves fluid- or solid-like, and whether fusion succeeds.</p>
+      </div>
+    </div>
+    
     <ul>
-      <li>
+<!--       <li>
         
       <a href="https://www.biorxiv.org/content/10.1101/2024.08.30.610303v1">Ongenae et al. (2024) BioRxiv preprint:</a>
       <b>Active foam dynamics of tissue spheroid fusion</b>
@@ -235,7 +306,7 @@ nav {
             However, this was not found to be a (typical) rigidity transition, since the static yield stress in a shear experiment remains zero, even when increasing cell-cell friction.
           </p>
         
-      </li>
+      </li> -->
       <li>
          <a href="https://www.nature.com/articles/s41567-024-02510-3">Lacroix et al. (2024) Nature Physics: </a> 
          <b>Emergence of bidirectional cell laning from collective contact guidance</b>
