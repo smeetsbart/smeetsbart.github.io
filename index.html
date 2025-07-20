@@ -236,6 +236,33 @@ nav {
     max-width: 100%;
   }
 }
+
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%) brightness(0%) invert(30%);
+  opacity: 0.8;
+}
+
+.social-links img:hover {
+  filter: none;
+  opacity: 1;
+}
+    
   </style>
 </head>
   
@@ -454,6 +481,15 @@ nav {
     </div>
     <p>Contact me if you are interested in our research!
        I am always looking for good students or interesting new collaborations!</p>
+  </div>
+
+  <div class="social-links">
+    <a href="https://bsky.app/profile/bart-smeets.bsky.social‬" target="_blank" aria-label="Bluesky">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/bluesky.svg" alt="Bluesky" />
+    </a>
+    <a href="https://twitter.com/bartsmeets16" target="_blank" aria-label="X / Twitter">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter / X" />
+    </a>
   </div>
 
   <div class="footer">
